@@ -1,1 +1,1 @@
-web: gunicorn tbcomp.wsgi — log-file -
+web: gunicorn final-textbook.wsgi — log-file -
