@@ -97,7 +97,7 @@
 				</div>
 				<div class="form-group text-muted" id="message">
 					<h6>Password must contain the following:</h6>
-					A lowercase letter<br>
+					<p>A lowercase letter<br>
 					A capital (uppercase) letter<br>
 					A number<br>
 					Minimum 8 characters</p>
@@ -132,7 +132,7 @@
 						<i class="fa fa-graduation-cap"></i>
 					</span>
 				</label>
-				<select class="year-select md-form" id="year" name="year" type="text">
+				<select class="year-select md-form" id="year" name="year">
 					<option value="none" selected disabled hidden>Year Of Study</option>
 					<option name="year" value="FY">FY</option>
 					<option name="year" value="SY">SY</option>
@@ -155,6 +155,9 @@
 			<div class="alert alert-danger" role="alert" id="blank-alert-message">
 				Please fill out Security Questions
 			</div>
+			<div class="alert alert-danger" role="alert" id="maxlen-alert-message">
+                    Response should not be greater than 20 characters
+			</div>
 		</div>
 		<div class="security-section ml-3">
 			<div class="form-group row" id="question1">
@@ -162,21 +165,21 @@
 				<div class="input-group">
 					<div class="form-row">
 						<input type="text" class="form-control" name="question1" id="firstQuestion"
-							placeholder="Your Response"></div>
+							placeholder="Your Response (Maximum 20 characters)"></div>
 				</div>
 			</div>
 			<div class="form-group row" id="question2">
 				<label for="question2" id="secondQuestionLabel">What is your favorite Sport?</label><br>
 				<div class="input-group">
 					<div class="form-row"><input type="text" class="form-control" name="question2" id="secondQuestion"
-							placeholder="Your Response"></div>
+							placeholder="Your Response (Maximum 20 characters)"></div>
 				</div>
 			</div>
 			<div class="form-group row" id="question3">
 				<label for="question3" id="thirdQuestionLabel">What is your favorite Song?</label><br>
 				<div class="input-group">
 					<div class="form-row"><input type="text" class="form-control" name="question3" id="thirdQuestion"
-							placeholder="Your Response"></div>
+							placeholder="Your Response (Maximum 20 characters)"></div>
 				</div>
 			</div>
 		</div>

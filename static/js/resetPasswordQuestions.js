@@ -21,12 +21,14 @@ function nameValidation(){
     var alertMessage = document.getElementById('alert-message');
     var ErrorAlertMessage = document.getElementById('error-alert-message');
     var BlankAlertMessage = document.getElementById('blank-alert-message');
+    var MaxLenAlertMessage = document.getElementById('maxlen-alert-message');
 
     if (q1 == "" && q2 == "" && q3 == "")
     {
         ErrorAlertMessage.style.display = "none";
         alertMessage.style.display = "none";
         BlankAlertMessage.style.display = "block";
+        MaxLenAlertMessage.style.display = "none";
         return false;
 
     } 
@@ -34,6 +36,7 @@ function nameValidation(){
         ErrorAlertMessage.style.display = "block";
         alertMessage.style.display = "none";
         BlankAlertMessage.style.display = "none";
+        MaxLenAlertMessage.style.display = "none";
         return false;
 
     }
@@ -42,7 +45,17 @@ function nameValidation(){
         ErrorAlertMessage.style.display = "block";
         alertMessage.style.display = "none";
         BlankAlertMessage.style.display = "none";
+        MaxLenAlertMessage.style.display = "none";
         return false;
     }
+    else if(q1.length>20 || q2.length>20 ||q3.length>20)
+    {
+        ErrorAlertMessage.style.display = "none";
+        alertMessage.style.display = "none";
+        BlankAlertMessage.style.display = "none";
+        MaxLenAlertMessage.style.display = "block";
+        return false;
+    }
+
 
 }

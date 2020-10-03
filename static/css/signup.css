@@ -193,6 +193,9 @@ select{
 #blank-alert-message{
     display: none;
 }
+#maxlen-alert-message{
+    display: none;
+}
 #collegeNameAlert{
 	color:red;
 }

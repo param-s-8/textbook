@@ -57,7 +57,7 @@
         document.getElementById('studyYearAlert').innerHTML = '';
         document.getElementById('studyYearAlert').style.display = 'none';
     }
-    //Validsation for Security Questions
+    //Validation for Security Questions
     var q1 = document.forms["RegisterForm"]["question1"].value;
     var q2 = document.forms["RegisterForm"]["question2"].value;
     var q3 = document.forms["RegisterForm"]["question3"].value;
@@ -65,12 +65,14 @@
     var alertMessage = document.getElementById('alert-message');
     var ErrorAlertMessage = document.getElementById('security-error-alert-message');
     var BlankAlertMessage = document.getElementById('blank-alert-message');
+    var MaxLenAlertMessage = document.getElementById('maxlen-alert-message');
 
     if (q1 == "" && q2 == "" && q3 == "")
     {
         ErrorAlertMessage.style.display = "none";
         alertMessage.style.display = "none";
         BlankAlertMessage.style.display = "block";
+        MaxLenAlertMessage.style.display = "none";
         return false;
 
     } 
@@ -78,22 +80,29 @@
         ErrorAlertMessage.style.display = "block";
         alertMessage.style.display = "none";
         BlankAlertMessage.style.display = "none";
+        MaxLenAlertMessage.style.display = "none";
         return false;
-
     }
     else if(q1 != "" && q2 != "" && q3 != "" ) 
     {
         ErrorAlertMessage.style.display = "block";
         alertMessage.style.display = "none";
         BlankAlertMessage.style.display = "none";
+        MaxLenAlertMessage.style.display = "none";
         return false;
-
-
     }
+    else if(q1.length>20 || q2.length>20 ||q3.length>20)
+    {
+        ErrorAlertMessage.style.display = "none";
+        alertMessage.style.display = "none";
+        BlankAlertMessage.style.display = "none";
+        MaxLenAlertMessage.style.display = "block";
+        return false;
+    }
+    /*
     else if (q1 != "" && q2 != "" && q3=="" || q1 ==""  && q2 != "" && q3 != "" || q1 != "" && q2== "" && q3 != "")
     {
         var loginForm = document.getElementById('main-login-form-section');
         loginForm.style.display = "none";
-       
-    } 
+    }*/
 }
