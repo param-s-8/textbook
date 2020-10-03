@@ -38,7 +38,8 @@
     <!-- Navbar start -->
     <div class='our-navbar'>
         <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
-            <a class="navbar-brand" href="{% url 'index' %}"><img style="height: 28px;width: 170px;" src="../static/logo.png" /></a>
+            <a class="navbar-brand" href="{% url 'index' %}"><img style="height: 28px;width: 170px;"
+                    src="../static/logo.png" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -53,7 +54,6 @@
                         <a class="nav-link" href="{% url 'aboutus' %}">About Us <span class="fa fa-users"></span></a>
                     </li>
                 </ul>
-
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item underlinehover ">
                         <a class="nav-link " href="#" id="btnLogin" data-toggle="modal"
@@ -69,10 +69,9 @@
 
     <!-- navbar ends -->
     <br><br>
-
     <div class="container">
         <div class="modal fade show" data-easein="slideDownIn" id="profileModal" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-profile modal-dialog-centered" role="document" >
+            <div class="modal-dialog modal-profile modal-dialog-centered" role="document">
                 <div class="modal-content" style="border-radius: 12px;">
                     <div class="modal-header" style="border-radius: 12px 12px 0px 0px;">
                         <h5 class="modal-title">Profile</h5>
@@ -134,13 +133,10 @@
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
 
                     <div class="carousel-inner">
-
                         <div class="carousel-item active">
-
                             <div class="div1 subject1padding" style='color: black;'>
                                 <div class="demoFont">Elements of Electrical & Electronic Engineering</div>
                             </div>
-
                             <div class='row justify-content-around'>
                                 <div class='col-md-1'></div>
                                 <div class='col-md-4'>
@@ -161,7 +157,6 @@
                                         </a>
                                     </div>
                                 </div>
-
                                 <div class='col-md-4'>
                                     <div class="card">
                                         <a href="EEEE/AC Circuits/documents">
@@ -511,10 +506,12 @@
                     <h6 style="font-weight:bold">Useful links</h5>
                         <br>
                         <ul class="bb">
-                            <li><a href="{% url 'index' %}" style="text-decoration: none;color:#2d9cc2;" class="fa fa-home"></a><a
-                                    href="{% url 'index' %}" style="text-decoration: none;color:white"> Home</a></li>
+                            <li><a href="{% url 'index' %}" style="text-decoration: none;color:#2d9cc2;"
+                                    class="fa fa-home"></a><a href="{% url 'index' %}"
+                                    style="text-decoration: none;color:white"> Home</a></li>
                             <br>
-                            <li><a href="{% url 'aboutus' %}" class="fa fa-users" style="text-decoration: none;color:#2d9cc2;" ></a>
+                            <li><a href="{% url 'aboutus' %}" class="fa fa-users"
+                                    style="text-decoration: none;color:#2d9cc2;"></a>
                                 <a href="{% url 'aboutus' %}" style="text-decoration: none;color:white"> About</a></li>
                             <br>
                             <li><a href="{% url 'logout' %}" style="text-decoration: none;color:#2d9cc2;"
@@ -531,7 +528,8 @@
                                 style="font-size:18px;color:#2d9cc2;"></a> K.J. Somaiya College of Engineering
                             <br> Vidyanagar, Vidyavihar<br>
                             Mumbai, India </p>
-                            <p><a class="fa fa-envelope" style="font-size:14px;color:#2d9cc2; text-decoration: none;" href="mailto:inderjitsingh@somaiya.edu"> inderjitsingh@somaiya.edu</a> </p>
+                        <p><a class="fa fa-envelope" style="font-size:14px;color:#2d9cc2; text-decoration: none;"
+                                href="mailto:inderjitsingh@somaiya.edu"> inderjitsingh@somaiya.edu</a> </p>
                 </div>
 
                 <div class="column col-xl-3 col-md-3 col-sm-12 side">
@@ -554,8 +552,5 @@
     <!--footer-->
     <!----JS template----->
     <script type="text/javascript" src="{% static 'js/postlogin.js' %}"></script>
-
-
 </body>
-
 </html>
