@@ -39,15 +39,7 @@
         <link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}">
     </head>
     <body>
-        <div class='overlay'>
-            <div class='overlay-content'>
-                <center>
-                <img style="margin:auto;height:100px;width:100px;" src="../../static/images/documents-page/e690ed420093d7a1f762589df2d575c9.png" /><br>
-                <div style="color:white;font-size: 18px;text-align: center;">This Page is under progress.<br>More learning soon...</div>
-                <a href="{% url 'subjects' %}"><div style="font-size: 20px;color:white;margin:0;float:top; border:1px solid rgb(0, 162, 255);border-radius: 5px;margin-top: 15px;"> <i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>&nbsp; Back </div></a>
-                </center>
-            </div>
-        </div>
+        
         <!-- Navbar start -->
         <div class='our-navbar'>
             <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
@@ -152,7 +144,8 @@
             <div class="container main">
                 <div class="row row1">
                     <div class="col-md-3 divi ">
-                        <a href="#">
+                        <!--  write {% static 'path after static i.e EEEE/' %} in href of every doc -->
+                        <a href="{% static 'EEEE/AC Circuits/Document1.pdf' %}">
                             <img class="card-img" src="../../static/images/documents-page/pdf.png">
                             <div class="topicname">
                                 <p class="card-title">Document 1</p>
