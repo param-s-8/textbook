@@ -1,6 +1,7 @@
  function RegisterValidation(){
     var email=document.forms["RegisterForm"]["email"].value;
-    var email_patt=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    /* var email_patt=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; */
+    var email_patt=/^\w+([\.-]?\w+)*@somaiya.edu$/; 
 
     var clg_name = document.forms["RegisterForm"]["college"].value;
     var userPattern = /^[a-zA-Z]([\w -.]*[a-zA-Z])?$/;
@@ -13,7 +14,8 @@
     
     if(email_patt.test(email) == false )
 	{
-        document.getElementById('emailAlert').innerHTML=" **Please enter valid Email"
+        /* document.getElementById('emailAlert').innerHTML=" **Please enter valid Email"; */
+        document.getElementById('emailAlert').innerHTML=" **Please Enter Somaiya Email-Address";
 		return false;
 	}
 	else{
@@ -22,7 +24,7 @@
     }
     if (passwordpattern.test(password) == false)
     {
-        document.getElementById('passwordAlert').innerHTML=" **Please enter valid Password"
+        document.getElementById('passwordAlert').innerHTML=" **Please enter valid Password";
 		return false;
     }
     else{
